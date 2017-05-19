@@ -1,0 +1,11 @@
+﻿  Source.cpp
+c:\users\federicotomas\desktop\ejemplos imagecampus\introduccion a la programacion de videojuegos\arrays\source.cpp(116): warning C4838: la conversión de 'double' en 'float' requiere una conversión de restricción
+c:\users\federicotomas\desktop\ejemplos imagecampus\introduccion a la programacion de videojuegos\arrays\source.cpp(116): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+c:\users\federicotomas\desktop\ejemplos imagecampus\introduccion a la programacion de videojuegos\arrays\source.cpp(139): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+c:\users\federicotomas\desktop\ejemplos imagecampus\introduccion a la programacion de videojuegos\arrays\source.cpp(222): warning C4838: la conversión de 'double' en 'float' requiere una conversión de restricción
+c:\users\federicotomas\desktop\ejemplos imagecampus\introduccion a la programacion de videojuegos\arrays\source.cpp(222): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+c:\users\federicotomas\desktop\ejemplos imagecampus\introduccion a la programacion de videojuegos\arrays\source.cpp(315): warning C4838: la conversión de 'double' en 'float' requiere una conversión de restricción
+c:\users\federicotomas\desktop\ejemplos imagecampus\introduccion a la programacion de videojuegos\arrays\source.cpp(315): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  LINK : no se encontró C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\x64\Debug\Arrays.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
+  Arrays.vcxproj -> C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\x64\Debug\Arrays.exe
+  Arrays.vcxproj -> C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\x64\Debug\Arrays.pdb (Partial PDB)

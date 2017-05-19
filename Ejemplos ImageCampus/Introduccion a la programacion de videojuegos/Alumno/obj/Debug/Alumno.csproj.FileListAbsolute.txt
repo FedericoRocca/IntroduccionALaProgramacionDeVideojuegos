@@ -1,0 +1,6 @@
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Alumno\bin\Debug\Alumno.exe.config
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Alumno\bin\Debug\Alumno.exe
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Alumno\obj\Debug\Alumno.csprojResolveAssemblyReference.cache
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Alumno\obj\Debug\Alumno.exe
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Alumno\obj\Debug\Alumno.pdb
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Alumno\bin\Debug\Alumno.pdb

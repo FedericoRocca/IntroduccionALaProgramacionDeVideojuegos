@@ -1,0 +1,6 @@
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\POO\bin\Debug\POO.exe.config
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\POO\bin\Debug\POO.exe
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\POO\bin\Debug\POO.pdb
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\POO\obj\Debug\POO.csprojResolveAssemblyReference.cache
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\POO\obj\Debug\POO.exe
+C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\POO\obj\Debug\POO.pdb
