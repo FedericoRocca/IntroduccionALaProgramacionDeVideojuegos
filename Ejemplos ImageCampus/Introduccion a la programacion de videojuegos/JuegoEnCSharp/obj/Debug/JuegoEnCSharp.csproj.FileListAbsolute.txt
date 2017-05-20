@@ -4,3 +4,9 @@ C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programaci
 C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\JuegoEnCSharp\bin\Debug\JuegoEnCSharp.pdb
 C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\JuegoEnCSharp\obj\Debug\JuegoEnCSharp.exe
 C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\JuegoEnCSharp\obj\Debug\JuegoEnCSharp.pdb
+C:\Users\FedericoTomas\Desktop\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\JuegoEnCSharp\bin\Debug\JuegoEnCSharp.exe.config
+C:\Users\FedericoTomas\Desktop\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\JuegoEnCSharp\obj\Debug\JuegoEnCSharp.exe
+C:\Users\FedericoTomas\Desktop\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\JuegoEnCSharp\obj\Debug\JuegoEnCSharp.pdb
+C:\Users\FedericoTomas\Desktop\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\JuegoEnCSharp\obj\Debug\JuegoEnCSharp.csprojResolveAssemblyReference.cache
+C:\Users\FedericoTomas\Desktop\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\JuegoEnCSharp\bin\Debug\JuegoEnCSharp.exe
+C:\Users\FedericoTomas\Desktop\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\JuegoEnCSharp\bin\Debug\JuegoEnCSharp.pdb
