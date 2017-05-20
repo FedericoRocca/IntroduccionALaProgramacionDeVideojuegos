@@ -18,7 +18,7 @@ namespace ClaseAlumno
         {
             System.Console.WriteLine("Las notas del alumno " + Nombre + " son: ");
             System.Console.WriteLine("Primer parcial: " + getPriParcial());
-            System.Console.WriteLine("Primer parcial: " + getSegParcial());
+            System.Console.WriteLine("Segundo parcial: " + getSegParcial());
             float Promedio = (getPriParcial() + getSegParcial()) / 2;
             System.Console.WriteLine("Promedio: " + Promedio);
         }
