@@ -22,18 +22,136 @@ namespace Clases
     class Snake
     {
         private string TotalSnake;
-        private char CharToPrint = '#';
-        private int PosX;
-        private int PosY;
+        private char CharToPrint;
+        private int PosX = 1;
+        private int PosY = 1;
+        bool IsMovingUp = false;
+        bool IsMovingDown = false;
+        bool IsMovingRight = true;
+        bool IsMovingLeft = false;
 
-        public void MoveUp() { PosY--; }
-        public void MoveDown() { PosY++; }
-        public void MoveLeft() { PosX--; }
-        public void MoveRight() { PosX++; }
+        public int getX() { return PosX; }
+        public int getY() { return PosY; }
+
+        public bool CheckEnemyColission( Snake Enemy )
+        {
+            if (Enemy.getX() == PosX && Enemy.getY() == PosY)
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public Snake( char ToPrint, int InitPosX, int InitPosY )
+        {
+            CharToPrint = ToPrint;
+            PosX = InitPosX;
+            PosY = InitPosY;
+        }
+
+        public void MoveRand()
+        {
+            Random RandomNumber = new Random();
+            int Direction = RandomNumber.Next(0, 4);
+
+            switch(Direction)
+            {
+                case 0:
+                    {
+                        IsMovingUp = true;
+                        IsMovingDown = false;
+                        IsMovingRight = false;
+                        IsMovingLeft = false;
+                    }
+                    break;
+                case 1:
+                    {
+                        IsMovingUp = false;
+                        IsMovingDown = true;
+                        IsMovingRight = false;
+                        IsMovingLeft = false;
+                    }
+                    break;
+                case 2:
+                    {
+                        IsMovingUp = false;
+                        IsMovingDown = false;
+                        IsMovingRight = true;
+                        IsMovingLeft = false;
+                    }
+                    break;
+                case 3:
+                    {
+                        IsMovingUp = false;
+                        IsMovingDown = false;
+                        IsMovingRight = false;
+                        IsMovingLeft = true;
+                    }
+                    break;
+            }
+
+            Move();
+
+        }
+
+        public void SetMoveUp()
+        {
+            IsMovingUp = true;
+            IsMovingDown = false;
+            IsMovingRight = false;
+            IsMovingLeft = false;
+        }
+
+        public void SetMoveDown()
+        {
+            IsMovingUp = false;
+            IsMovingDown = true;
+            IsMovingRight = false;
+            IsMovingLeft = false;
+        }
+        public void SetMoveRight()
+        {
+            IsMovingUp = false;
+            IsMovingDown = false;
+            IsMovingRight = true;
+            IsMovingLeft = false;
+        }
+        public void SetMoveLeft()
+        {
+            IsMovingUp = false;
+            IsMovingDown = false;
+            IsMovingRight = false;
+            IsMovingLeft = true;
+        }
+
+        public void Move()
+        {
+            if( IsMovingUp == true && PosY >= 2 )
+            {
+                PosY--;
+            }
+
+            if (IsMovingDown == true && PosY < 30)
+            {
+                PosY++;
+            }
+
+            if (IsMovingRight == true && PosX < 49)
+            {
+                PosX++;
+            }
+
+            if (IsMovingLeft == true && PosX >= 2)
+            {
+                PosX--;
+            }
+
+        }
 
         public void PrintSnake()
         {
-
+            Console.SetCursorPosition(PosX, PosY);
+            Console.Write(CharToPrint);
         }
 
     }
@@ -47,38 +165,30 @@ namespace Snake
 
         static public void PrintBorders(int MaxX, int MaxY)
         {
-            char Sides = '|';
-            char Corners = '+';
-            char TopAndBottom = '-';
-
-            int AuxX = 0, AuxY = 0;
-
-            for( int i = 0; i < MaxX; i++ )
+            for (int i = 0; i <= MaxX; i++)
             {
-                if( i == 0 || i == MaxX - 1)
-                {
-                    Console.SetCursorPosition(AuxX, AuxY);
-                    Console.Write(Corners);
-                }
-                else
-                {
-                    Console.SetCursorPosition(AuxX, AuxY);
-                    Console.Write(TopAndBottom);
-                }
-                AuxX++;
+                System.Console.Write("-");
             }
-            AuxX = 0;
-            AuxY = 1;
-            for( int i = 0; i < MaxY - 2; i++ )
+            System.Console.WriteLine();
+
+            for (int i = 0; i < MaxY; i++)
             {
-                {
-                    Console.SetCursorPosition(AuxX, AuxY);
-                    Console.Write(Sides);
-                }
-                AuxY++;
+                System.Console.Write("|");
+                System.Console.WriteLine();
             }
 
-           
+            for (int i = 0; i < MaxY; i++)
+            {
+                Console.SetCursorPosition(MaxX, i+1);
+                System.Console.Write("|");
+                System.Console.WriteLine();
+            }
+
+            for (int i = 0; i <= MaxX; i++)
+            {
+                System.Console.Write("-");
+            }
+            System.Console.WriteLine();
 
         }
 
@@ -86,18 +196,86 @@ namespace Snake
         {
             // Inicializacion
             Clases.Game Juego = new Clases.Game();
-            Clases.Snake Jugador = new Clases.Snake();
+            Clases.Snake Jugador = new Clases.Snake('#', 25, 15);
+            Clases.Snake[] Enemigos = new Clases.Snake[5];
 
-            PrintBorders( 10, 10 );
+            Random RandomPosYForEnemy = new Random();
 
-            while( Juego.getState() )
+            for (int i = 0; i < 5; i++ )
             {
-                // Logica
-                // Limitar FPS
-                // Limpiar pantalla
-                // Actualizacion
+                int RandownPosY = RandomPosYForEnemy.Next(1, 49);
+                Enemigos[i] = new Clases.Snake('@', 0, RandownPosY);
             }
 
+            ConsoleKeyInfo UserInput = new ConsoleKeyInfo();
+
+            while ( Juego.getState() )
+            {
+                // Logica
+                if (Console.KeyAvailable)
+                {
+                    UserInput = Console.ReadKey();
+
+                    switch (UserInput.Key)
+                    {
+                        case ConsoleKey.UpArrow:
+                            {
+                                Jugador.SetMoveUp();
+                            }
+                            break;
+                        case ConsoleKey.DownArrow:
+                            {
+                                Jugador.SetMoveDown();
+                            }
+                            break;
+                        case ConsoleKey.LeftArrow:
+                            {
+                                Jugador.SetMoveLeft();
+                            }
+                            break;
+                        case ConsoleKey.RightArrow:
+                            {
+                                Jugador.SetMoveRight();
+                            }
+                            break;
+                    }
+
+                }
+
+                Jugador.Move();
+
+                for (int i = 0; i < 5; i++)
+                {
+                    Enemigos[i].MoveRand();
+                }
+                
+                // Actualizacion
+                PrintBorders(50,30);
+                Jugador.PrintSnake();
+
+                for (int i = 0; i < 5; i++)
+                {
+                    Enemigos[i].PrintSnake();
+                }
+
+                // Limitar FPS
+                System.Threading.Thread.Sleep(50);
+                // Limpiar pantalla
+                System.Console.Clear();
+
+                for (int i = 0; i < 5; i++)
+                {
+
+                    if (Jugador.CheckEnemyColission(Enemigos[i]) == true)
+                    {
+                        Juego.setState(false);
+                        System.Console.WriteLine("Perdiste chango...");
+                        System.Console.ReadKey();
+                    }
+
+                }
+
+            }
 
         }
 
