@@ -1,5 +1,0 @@
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\RandomCSharp\bin\Debug\RandomCSharp.exe.config
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\RandomCSharp\bin\Debug\RandomCSharp.exe
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\RandomCSharp\bin\Debug\RandomCSharp.pdb
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\RandomCSharp\obj\Debug\RandomCSharp.exe
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\RandomCSharp\obj\Debug\RandomCSharp.pdb

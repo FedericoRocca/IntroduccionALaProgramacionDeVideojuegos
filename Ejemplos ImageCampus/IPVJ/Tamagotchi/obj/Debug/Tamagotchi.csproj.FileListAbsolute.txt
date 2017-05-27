@@ -1,6 +1,0 @@
-C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IPVJ\Ejemplos ImageCampus\IPVJ\Tamagotchi\bin\Debug\Tamagotchi.exe.config
-C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IPVJ\Ejemplos ImageCampus\IPVJ\Tamagotchi\bin\Debug\Tamagotchi.exe
-C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IPVJ\Ejemplos ImageCampus\IPVJ\Tamagotchi\bin\Debug\Tamagotchi.pdb
-C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IPVJ\Ejemplos ImageCampus\IPVJ\Tamagotchi\obj\Debug\Tamagotchi.csprojResolveAssemblyReference.cache
-C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IPVJ\Ejemplos ImageCampus\IPVJ\Tamagotchi\obj\Debug\Tamagotchi.exe
-C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IPVJ\Ejemplos ImageCampus\IPVJ\Tamagotchi\obj\Debug\Tamagotchi.pdb

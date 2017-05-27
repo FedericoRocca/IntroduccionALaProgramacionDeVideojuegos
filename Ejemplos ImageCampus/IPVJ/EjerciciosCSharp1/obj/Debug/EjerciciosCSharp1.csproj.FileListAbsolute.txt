@@ -1,6 +1,0 @@
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\EjerciciosCSharp1\bin\Debug\EjerciciosCSharp1.exe.config
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\EjerciciosCSharp1\obj\Debug\EjerciciosCSharp1.csprojResolveAssemblyReference.cache
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\EjerciciosCSharp1\bin\Debug\EjerciciosCSharp1.exe
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\EjerciciosCSharp1\bin\Debug\EjerciciosCSharp1.pdb
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\EjerciciosCSharp1\obj\Debug\EjerciciosCSharp1.exe
-C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\EjerciciosCSharp1\obj\Debug\EjerciciosCSharp1.pdb

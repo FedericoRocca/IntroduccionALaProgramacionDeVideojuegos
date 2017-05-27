@@ -1,4 +1,0 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Juego.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Juego.cpp
-  Juego.vcxproj -> C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\x64\Debug\Ahorcado.exe
-  Juego.vcxproj -> C:\Users\FedericoTomas\Desktop\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\x64\Debug\Ahorcado.pdb (Partial PDB)
