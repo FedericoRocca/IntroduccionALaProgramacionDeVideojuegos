@@ -1,0 +1,9 @@
+C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Snake\bin\Debug\Persecuta.exe.config
+C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Snake\bin\Debug\Persecuta.exe
+C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Snake\bin\Debug\Persecuta.pdb
+C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Snake\obj\Debug\Persecuta.csprojResolveAssemblyReference.cache
+C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Snake\obj\Debug\Persecuta.exe
+C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IntroduccionALaProgramacionDeVideojuegos\Ejemplos ImageCampus\Introduccion a la programacion de videojuegos\Snake\obj\Debug\Persecuta.pdb
+C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IPVJ\Ejemplos ImageCampus\IPVJ\Snake\bin\Debug\Persecuta.exe.config
+C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IPVJ\Ejemplos ImageCampus\IPVJ\Snake\obj\Debug\Persecuta.exe
+C:\Users\FedericoTomas\Desktop\PortableGit\ReposGit\IPVJ\Ejemplos ImageCampus\IPVJ\Snake\obj\Debug\Persecuta.pdb
