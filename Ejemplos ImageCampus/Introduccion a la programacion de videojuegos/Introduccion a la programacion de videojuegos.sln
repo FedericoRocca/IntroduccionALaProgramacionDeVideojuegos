@@ -47,7 +47,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonajeArma", "PersonajeA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoEnCSharp", "JuegoEnCSharp\JuegoEnCSharp.csproj", "{1F0BA4BF-689D-434A-858E-9CFB49586339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake", "Snake\Snake.csproj", "{6081100A-603C-4E9D-B687-F74247E14367}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persecuta", "Snake\Persecuta.csproj", "{6081100A-603C-4E9D-B687-F74247E14367}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
