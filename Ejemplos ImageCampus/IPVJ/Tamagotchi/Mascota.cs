@@ -28,23 +28,99 @@ namespace Tamagotchi
         private int Fun;
         private int Health;
         private Estado[] State;
+        private int CooldownHunger;
+        private int CooldownFun;
+        private int CooldownHealth;
+        private int SickTurns;
 
         public Mascota(string NewName)
         {
             Name = NewName;
 
             Hunger = 0;
-            Fun = 10;
+            Fun = 100;
             Health = 100;
             State = new Estado[4];
             State[0] = Estado.Vivo;
             State[1] = Estado.Divertido;
             State[2] = Estado.Sano;
             State[3] = Estado.Lleno;
+            CooldownHunger = 0;
+            CooldownFun = 0;
+            CooldownHealth = 0;
+            SickTurns = 0;
 
         }
 
-        // Agregar metodos para aumentar hambre y todo eso
+        public int getCooldownHunger() { return CooldownHunger; }
+        public int getCooldownFun() { return CooldownFun; }
+        public int getCooldownHealth() { return CooldownHealth; }
+
+        public bool getSick() { if (State[2] == Estado.Enfermo) { return true; } else return false; }
+
+        public bool IsAlive() { if (State[0] == Estado.Vivo) { return true; } else { return false; } }
+        public string getName() { return Name; }
+
+        public void PrintJugabilidad()
+        {
+            Console.SetCursorPosition(21, 15);
+            System.Console.Write("A - Alimentar (Cooldown " + CooldownHunger + " turnos)");
+            Console.SetCursorPosition(21, 16);
+            System.Console.Write("B - Divertir (Cooldown " + CooldownFun + " turnos)");
+            Console.SetCursorPosition(21, 17);
+            System.Console.Write("C - Curar (Cooldown " + CooldownHealth + " turnos)");
+        }
+
+        public void LowerHunger()
+        {
+            if ((Hunger - 75) >= 0)
+            {
+                Hunger -= 75;
+            }
+            else
+            {
+                Hunger = 0;
+            }
+            setCooldownHunger();
+        }
+
+        public void LowerFun() { if (Fun > 0) { Fun--; } }
+        public void LowerHealth() { if (Health > 0) { Health--; } }
+
+        public void UpperHunger() { if (Hunger < 100) { Hunger++; } if (Hunger == 100) { Health--; } }
+        public void UpperFun()
+        {
+            if(Fun < 100 && (Fun + 50) <= 100)
+            {
+                Fun += 50;
+            }
+            else
+            {
+                Fun = 100;
+            }
+            setCooldownFun();
+        }
+
+        public void UpperHealth()
+        {
+            if (Health < 100 && ( Health + 50 ) <= 100 )
+            {
+                Health += 50;
+            }
+            else
+            {
+                Health = 100;
+            }
+            setCooldownHealth();
+        }
+
+        public void setCooldownHunger() { CooldownHunger = 10; }
+        public void setCooldownFun() { CooldownFun = 15; }
+        public void setCooldownHealth() { CooldownHealth = 100; }
+
+        public void ReduceCooldownHunger() { if (CooldownHunger > 0) { CooldownHunger--; }}
+        public void ReduceCooldownFun() { if (CooldownFun > 0) { CooldownFun--; } }
+        public void ReduceCooldownHealth() { if (CooldownHealth > 0) { CooldownHealth--; } }
 
         public int getHunger() { return Hunger; }
         public int getFun() { return Fun; }
@@ -94,7 +170,7 @@ namespace Tamagotchi
 
         public void RefreshState()
         {
-            if (Hunger <= 0 || Health <= 0 || (Fun <= 0 && (State[2] == Estado.Enfermo)))
+            if (Health <= 0)
             {
                 State[0] = Estado.Muerto;
             }
@@ -108,13 +184,13 @@ namespace Tamagotchi
                 State[1] = Estado.Aburrido;
             } else State[1] = Estado.Divertido;
 
-            if (Health <= 25)
+            if (Health <= 25 && Fun <= 25)
             {
                 State[2] = Estado.Enfermo;
             }
             else State[2] = Estado.Sano;
 
-            if( Hunger <= 25 )
+            if( Hunger >= 75 )
             {
                 State[3] = Estado.Hambriento;
             }
@@ -123,13 +199,7 @@ namespace Tamagotchi
 
         public void PrintPet()
         {
-            if( State[0] == Estado.Vivo )
-            {
-                MascotaP1 = "(O.O)";
-            }
-            else MascotaP1 = "(X.X)";
-
-            if( State[1] == Estado.Aburrido )
+            if ( State[1] == Estado.Aburrido )
             {
                 MascotaP1 = "(u.u)";
             }
@@ -147,9 +217,13 @@ namespace Tamagotchi
             }
             else MascotaP1 = "(o.o)";
 
+            if (State[0] == Estado.Muerto)
+            {
+                MascotaP1 = "(X.X)";
+            }
+
             Console.SetCursorPosition(7, 2);
             System.Console.Write(MascotaP1);
-
         }
 
     }
