@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sobrecarga", "Sobrecarga\So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nave", "Nave\Nave.csproj", "{FDDBBDD2-7208-4B9F-9854-849D1DF7BEFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trampa", "Trampa\Trampa.csproj", "{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -361,6 +363,18 @@ Global
 		{FDDBBDD2-7208-4B9F-9854-849D1DF7BEFC}.Release|x64.Build.0 = Release|Any CPU
 		{FDDBBDD2-7208-4B9F-9854-849D1DF7BEFC}.Release|x86.ActiveCfg = Release|Any CPU
 		{FDDBBDD2-7208-4B9F-9854-849D1DF7BEFC}.Release|x86.Build.0 = Release|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Debug|x64.Build.0 = Debug|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Debug|x86.Build.0 = Debug|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Release|x64.ActiveCfg = Release|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Release|x64.Build.0 = Release|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Release|x86.ActiveCfg = Release|Any CPU
+		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
