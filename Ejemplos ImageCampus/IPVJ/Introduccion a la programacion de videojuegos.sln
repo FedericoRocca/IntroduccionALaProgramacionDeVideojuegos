@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nave", "Nave\Nave.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trampa", "Trampa\Trampa.csproj", "{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjPT1", "EjPT1\EjPT1.csproj", "{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -375,6 +377,18 @@ Global
 		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Release|x64.Build.0 = Release|Any CPU
 		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Release|x86.ActiveCfg = Release|Any CPU
 		{A7FB704A-11BD-4E43-9A8A-20CE70FB51EC}.Release|x86.Build.0 = Release|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Debug|x64.Build.0 = Debug|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Debug|x86.Build.0 = Debug|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Release|x64.ActiveCfg = Release|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Release|x64.Build.0 = Release|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Release|x86.ActiveCfg = Release|Any CPU
+		{43D97ED4-1C55-4AF3-A418-9511A2EF6B32}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
