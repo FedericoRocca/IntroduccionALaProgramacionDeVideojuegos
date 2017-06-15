@@ -61,11 +61,11 @@ namespace EjPT3
 
         public void Draw()
         {
-            for ( int i = upperLeft.getX(); i < Width; i++ )
+            for ( int i = upperLeft.getX() - 1; i < Width; i++ )
             {
                 for( int a = 1; a < Height + 1; a++ )
                 {
-                    Console.SetCursorPosition(a,i);
+                    Console.SetCursorPosition(i,a);
                     Console.Write("#");
                 }
             }

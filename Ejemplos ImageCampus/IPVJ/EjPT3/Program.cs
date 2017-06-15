@@ -11,9 +11,12 @@ namespace EjPT3
         static void Main(string[] args)
         {
             Point ArribaIzquierda = new Point(1, 1);
-            Point AbajoDerecha = new Point(5, 5);
+            Point AbajoDerecha = new Point(20, 4);
             Rectangle Rectangulo = new Rectangle(ArribaIzquierda, AbajoDerecha);
             Rectangulo.Draw();
+            System.Console.WriteLine();
+            System.Console.WriteLine();
+            System.Console.WriteLine();
         }
     }
 }
