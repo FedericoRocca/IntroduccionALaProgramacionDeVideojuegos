@@ -12,12 +12,7 @@ package
 			
 			var MyMenu:Menu = new Menu();
 			
-			addChild( MyMenu.getBackgroundMenu() );
-			addChild( MyMenu.getPlayButton() );
-			addChild( MyMenu.getPlayText() );
-			addChild( MyMenu.getOptionsButton() );
-			addChild( MyMenu.getCreditsButton() );
-			addChild( MyMenu.getExitButton() );
+			MyMenu.PrintMenu(this);
 			
 		}
 	}
