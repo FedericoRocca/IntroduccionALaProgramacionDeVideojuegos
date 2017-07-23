@@ -22,8 +22,10 @@ package MyClases
 		private var TileFloorThree:Bitmap = new FloorThree; 
 		
 		protected var MyFloor:Vector.<Bitmap> = new Vector.<Bitmap>;
+		protected var MyEnemy:Vector.<Enemy> = new Vector.<Enemy>;
 		
 		private var MyPlayer:Player = new Player();
+		private var Oleada:uint = 1;
 		
 		public function InGame()
 		{
@@ -62,6 +64,18 @@ package MyClases
 				addChild( MyFloor[i] );
 			}
 			
+			// Inicializo los enemigos
+			for(i = 0; i < Oleada; i++)
+			{
+				MyEnemy.push(new Enemy);
+			}
+			
+			// Agrego todos los enemigos
+			for(i = 0; i < Oleada; i++)
+			{
+				addChild( MyEnemy[i] );
+			}
+			
 			addChild( MyPlayer );
 		}
 		
@@ -73,7 +87,7 @@ package MyClases
 				MyPlayer.MovePlayerUp();
 			}
 			
-			if( event.keyCode == Keyboard.A || event.keyCode == Keyboard.RIGHT )
+			if( event.keyCode == Keyboard.D || event.keyCode == Keyboard.RIGHT )
 			{
 				MyPlayer.MovePlayerRight();
 			}
@@ -83,7 +97,7 @@ package MyClases
 				MyPlayer.MovePlayerDown();
 			}
 			
-			if( event.keyCode == Keyboard.D || event.keyCode == Keyboard.LEFT )
+			if( event.keyCode == Keyboard.A || event.keyCode == Keyboard.LEFT )
 			{
 				MyPlayer.MovePlayerLeft();
 			}
@@ -101,7 +115,7 @@ package MyClases
 			
 			if( event.keyCode == Keyboard.A || event.keyCode == Keyboard.RIGHT )
 			{
-				MyPlayer.StopMovingPlayerRight();
+				MyPlayer.StopMovingPlayerLeft();
 			}
 			
 			if( event.keyCode == Keyboard.S || event.keyCode == Keyboard.DOWN )
@@ -111,7 +125,15 @@ package MyClases
 			
 			if( event.keyCode == Keyboard.D || event.keyCode == Keyboard.LEFT )
 			{
-				MyPlayer.StopMovingPlayerLeft();
+				MyPlayer.StopMovingPlayerRight();
+			}
+		}
+		
+		public function MoveEnemies():void
+		{
+			for(var i:int = 0; i < Oleada; i++)
+			{
+				MyEnemy[i].GoToPlayer(MyPlayer.getX(), MyPlayer.getY());
 			}
 		}
 	}

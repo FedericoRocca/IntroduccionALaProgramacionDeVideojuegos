@@ -31,6 +31,7 @@ package
 			{
 				stage.addEventListener(KeyboardEvent.KEY_DOWN, ProcessPlayerMovement);
 				stage.addEventListener(KeyboardEvent.KEY_UP, StopProcessPlayerMovement);
+				MyGame.MoveEnemies();
 				addChild( MyGame );
 			}
 		}
