@@ -1,10 +1,11 @@
 package
 {
-	import Menu.Menu;
+	import MyClases.Menu;
 	
 	import flash.display.Sprite;
 	
-	[SWF(width="800",height="600")]
+	[SWF(width="800",height="512")]
+	
 	public class SquareDeath extends Sprite
 	{
 		public function SquareDeath()
@@ -12,7 +13,7 @@ package
 			
 			var MyMenu:Menu = new Menu();
 			
-			MyMenu.PrintMenu(this);
+			addChild( MyMenu );
 			
 		}
 	}
