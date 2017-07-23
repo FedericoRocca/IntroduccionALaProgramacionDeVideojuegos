@@ -3,6 +3,7 @@ package MyClases
 	import flash.display.Bitmap;
 	import flash.display.SimpleButton;
 	import flash.display.Sprite;
+	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;
@@ -26,7 +27,7 @@ package MyClases
 		
 		private var ThisButton:SimpleButton = new SimpleButton(MyButton, MyButtonHover, MyPressedButton, MyPressedButton);
 		
-		public var TextButton:TextField = new TextField();
+		protected var TextButton:TextField = new TextField();
 		
 		public function SDButton(MyText:String, PosY:uint)
 		{
@@ -59,6 +60,7 @@ package MyClases
 		{
 			ThisButton.y = ThisButton.y - 4;
 			TextButton.y = TextButton.y - 4;
+			dispatchEvent(new Event("IWantToPlay"));
 			
 		}
 		

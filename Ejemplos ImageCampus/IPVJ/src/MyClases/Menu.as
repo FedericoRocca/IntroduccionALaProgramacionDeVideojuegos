@@ -2,6 +2,7 @@ package MyClases
 {
 	import flash.display.Bitmap;
 	import flash.display.Sprite;
+	import flash.events.Event;
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;
 	import flash.text.TextFormat;
@@ -44,11 +45,18 @@ package MyClases
 			MyMenuBackground.scaleX = 1.1;
 			MyMenuBackground.scaleY = 1.09;
 			
+			PlayButton.addEventListener("IWantToPlay", GoToPlay);
+			
 			addChild( MyMenuBackground );
 			addChild( GameTitle );
 			addChild( PlayButton );
 			addChild( OptionsButton );
 			addChild( CreditsButton );
+		}
+		
+		protected function GoToPlay(event:Event):void
+		{
+			dispatchEvent(new Event("IWantToPlay"));
 		}
 	}
 }
