@@ -12,6 +12,8 @@ package MyClases
 		
 		private var Step:uint = 30;
 		
+		private var Damage:int = 10;
+		
 		public function Enemy()
 		{
 			
@@ -58,6 +60,11 @@ package MyClases
 			
 			addChild( MyEnemy );
 			
+		}
+		
+		public function getDamage():int
+		{
+			return Damage;
 		}
 		
 		public function GoToPlayer(PosX:int, PosY:int):void

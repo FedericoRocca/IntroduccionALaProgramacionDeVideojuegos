@@ -32,6 +32,7 @@ package
 				stage.addEventListener(KeyboardEvent.KEY_DOWN, ProcessPlayerMovement);
 				stage.addEventListener(KeyboardEvent.KEY_UP, StopProcessPlayerMovement);
 				MyGame.MoveEnemies();
+				MyGame.ProcessEnemies();
 				addChild( MyGame );
 			}
 		}
@@ -53,6 +54,7 @@ package
 				removeChild( MyMenu );
 			}
 			addChild( MyGame );
+			stage.focus = stage;
 		}
 		
 	}

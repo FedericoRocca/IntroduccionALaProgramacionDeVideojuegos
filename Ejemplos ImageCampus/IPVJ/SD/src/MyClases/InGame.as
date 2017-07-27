@@ -4,6 +4,9 @@ package MyClases
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
+	import flash.text.TextField;
+	import flash.text.TextFieldAutoSize;
+	import flash.text.TextFormat;
 	import flash.ui.Keyboard;
 
 	public class InGame extends Sprite
@@ -129,8 +132,6 @@ package MyClases
 				MyPlayer.StopMovingPlayerRight();
 			}
 			
-			
-			
 		}
 		
 		public function MoveEnemies():void
@@ -139,6 +140,60 @@ package MyClases
 			{
 				MyEnemy[i].GoToPlayer(MyPlayer.x - 20, MyPlayer.y  );
 			}
+		}
+		
+		public function ProcessEnemies():void
+		{
+			for( var i:int = 0; i < MyEnemy.length; i++)
+			{
+				if( MyEnemy[i].hitTestObject(MyPlayer) )
+				{
+					MyPlayer.getHit( MyEnemy[i].getDamage() );
+				}
+			}
+			
+			if( MyPlayer.IsDead() )
+			{
+				if(contains(MyPlayer ))
+				{
+					removeChild( MyPlayer );
+					
+					for( i = 0; i < MyEnemy.length; i++)
+					{
+						removeChild( MyEnemy[i] );
+					}
+					
+					var FinalColor:Sprite = new Sprite();
+					FinalColor.graphics.beginFill(0x000000);
+					FinalColor.graphics.drawRect(0, 0, 800, 512);
+					FinalColor.graphics.endFill();
+					FinalColor.x = 0;
+					FinalColor.y = 0;
+					
+					var EndTextFormat:TextFormat = new TextFormat();
+					
+					EndTextFormat.bold = true;
+					EndTextFormat.size = 72;
+					EndTextFormat.font = "Courier New" ;
+					EndTextFormat.color = 0xFF0000;
+					
+					var EndText:TextField = new TextField();
+					EndText.defaultTextFormat = EndTextFormat;
+					EndText.autoSize = TextFieldAutoSize.CENTER;
+					EndText.mouseEnabled = false;
+					EndText.text = "Perdiste!";
+					EndText.x = 400 - ( EndText.width / 2 );
+					EndText.y = 256 - ( EndText.height / 2 );
+					
+					addChild( FinalColor );
+					addChild( EndText );
+					
+				}
+			} 
+			else if( contains(MyPlayer ) )
+				{
+					addChild( MyPlayer );
+				}
 		}
 	}
 }
