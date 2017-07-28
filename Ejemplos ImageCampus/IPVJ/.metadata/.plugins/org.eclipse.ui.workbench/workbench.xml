@@ -41,7 +41,7 @@
 </editorArea>
 <editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="SquareDeath.as" partName="SquareDeath.as" path="C:/Users/FedericoTomas/Desktop/PortableGit/ReposGit/IPVJ/Ejemplos ImageCampus/IPVJ/SD/src/SquareDeath.as" title="SquareDeath.as" tooltip="SD/src/SquareDeath.as" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SD/src/SquareDeath.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="816" selectionTopPixel="356"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="844" selectionTopPixel="357"/>
 </editor>
 <editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Enemy.as" partName="Enemy.as" path="C:/Users/FedericoTomas/Desktop/PortableGit/ReposGit/IPVJ/Ejemplos ImageCampus/IPVJ/SD/src/MyClases/Enemy.as" title="Enemy.as" tooltip="SD/src/MyClases/Enemy.as" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SD/src/MyClases/Enemy.as"/>
@@ -49,7 +49,7 @@
 </editor>
 <editor activePart="true" focus="true" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="InGame.as" partName="InGame.as" path="C:/Users/FedericoTomas/Desktop/PortableGit/ReposGit/IPVJ/Ejemplos ImageCampus/IPVJ/SD/src/MyClases/InGame.as" title="InGame.as" tooltip="SD/src/MyClases/InGame.as" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SD/src/MyClases/InGame.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4499" selectionTopPixel="2767"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3502" selectionTopPixel="2399"/>
 </editor>
 <editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="SDButton.as" partName="SDButton.as" path="C:/Users/FedericoTomas/Desktop/PortableGit/ReposGit/IPVJ/Ejemplos ImageCampus/IPVJ/SD/src/MyClases/SDButton.as" title="SDButton.as" tooltip="SD/src/MyClases/SDButton.as" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SD/src/MyClases/SDButton.as"/>
@@ -57,7 +57,7 @@
 </editor>
 <editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Player.as" partName="Player.as" path="C:/Users/FedericoTomas/Desktop/PortableGit/ReposGit/IPVJ/Ejemplos ImageCampus/IPVJ/SD/src/MyClases/Player.as" title="Player.as" tooltip="SD/src/MyClases/Player.as" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SD/src/MyClases/Player.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4328" selectionTopPixel="3281"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4475" selectionTopPixel="3366"/>
 </editor>
 <editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Menu.as" partName="Menu.as" path="C:/Users/FedericoTomas/Desktop/PortableGit/ReposGit/IPVJ/Ejemplos ImageCampus/IPVJ/SD/src/MyClases/Menu.as" title="Menu.as" tooltip="SD/src/MyClases/Menu.as" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SD/src/MyClases/Menu.as"/>
@@ -171,8 +171,8 @@
 <alwaysOnActionSet id="com.adobe.flexbuilder.dcrad.actionSet"/>
 <alwaysOnActionSet id="com.adobe.flexbuilder.zzz.editors.common.ui.project.publish"/>
 <alwaysOnActionSet id="com.adobe.flexbuilder.exportimport.actionSet1"/>
-<alwaysOnActionSet id="com.adobe.flexbuilder.as.editor.ui.NavigationActions"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.as.editor.ui.NavigationActions"/>
 <show_view_action id="com.adobe.flexbuilder.mxml.editor.AppearanceView"/>
 <show_view_action id="com.adobe.flexbuilder.mxml.editor.components.ComponentsView"/>
 <show_view_action id="com.adobe.flexbuilder.packageexplorer"/>
@@ -286,22 +286,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SD/src/MyClases/InGame.as"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SD/src/MyClases/Player.as"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SD/src/MyClases/SDButton.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SD/src/SquareDeath.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SD/src/MyClases/Player.as"/>
 </editors>
-<item historyLabel="InGame.as" index="1">
-<position info="not_deleted" x="2049" y="0"/>
-</item>
-<item historyLabel="Player.as" index="2">
-<position info="not_deleted" x="4393" y="0"/>
-</item>
-<item historyLabel="InGame.as" index="1">
-<position info="not_deleted" x="2030" y="0"/>
-</item>
-<item historyLabel="Player.as" index="2">
-<position info="not_deleted" x="4382" y="0"/>
-</item>
-<item historyLabel="InGame.as" index="1">
-<position info="not_deleted" x="2030" y="0"/>
-</item>
 <item historyLabel="Player.as" index="2">
 <position info="not_deleted" x="4382" y="0"/>
 </item>
@@ -434,8 +421,23 @@
 <item historyLabel="InGame.as" index="1">
 <position info="not_deleted" x="4227" y="0"/>
 </item>
-<item active="true" historyLabel="InGame.as" index="1">
+<item historyLabel="InGame.as" index="1">
 <position/>
+</item>
+<item historyLabel="SquareDeath.as" index="4">
+<position info="not_deleted" x="844" y="0"/>
+</item>
+<item historyLabel="InGame.as" index="1">
+<position info="not_deleted" x="4040" y="0"/>
+</item>
+<item historyLabel="Player.as" index="5">
+<position info="not_deleted" x="4475" y="0"/>
+</item>
+<item historyLabel="InGame.as" index="1">
+<position info="not_deleted" x="1037" y="5"/>
+</item>
+<item active="true" historyLabel="InGame.as" index="1">
+<position info="not_deleted" x="1045" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

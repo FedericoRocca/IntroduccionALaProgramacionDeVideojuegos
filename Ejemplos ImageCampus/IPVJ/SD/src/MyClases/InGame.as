@@ -29,9 +29,11 @@ package MyClases
 		
 		private var MyPlayer:Player = new Player();
 		private var Oleada:uint = 1;
+		private var Vidas:TextField = new TextField();
 		
 		public function InGame()
 		{
+			
 			MyPlayer.x = 200;
 			MyPlayer.y = 200;
 			// Genero aleatoriamente el floor
@@ -144,6 +146,8 @@ package MyClases
 		
 		public function ProcessEnemies():void
 		{
+			Vidas.text = "Salud: " + MyPlayer.getHP();
+			addChild(Vidas);
 			for( var i:int = 0; i < MyEnemy.length; i++)
 			{
 				if( MyEnemy[i].hitTestObject(MyPlayer) )

@@ -214,10 +214,5 @@ package MyClases
 				return false;
 			}else return true;
 		}
-		
-		public function getHP():int
-		{
-			return HP;
-		}
 	}
 }

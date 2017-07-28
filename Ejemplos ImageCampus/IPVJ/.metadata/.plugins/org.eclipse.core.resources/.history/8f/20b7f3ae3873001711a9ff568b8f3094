@@ -215,9 +215,10 @@ package MyClases
 			}else return true;
 		}
 		
-		public function getHP():int
+		public function getHP():String
 		{
-			return HP;
+			// TODO Auto Generated method stub
+			return null;
 		}
 	}
 }
