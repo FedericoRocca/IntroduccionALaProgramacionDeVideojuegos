@@ -89,6 +89,7 @@ package MyClases
 				MyEnemy.y -= Step;
 			}
 			
+			/*
 			var Rotation:int = GetOrientation(PosX, PosY);
 			switch(Rotation)
 			{
@@ -116,8 +117,8 @@ package MyClases
 				case 7:
 					MyEnemy.rotation = 270;
 					break;
-				
 			}
+			*/
 			
 		}
 		

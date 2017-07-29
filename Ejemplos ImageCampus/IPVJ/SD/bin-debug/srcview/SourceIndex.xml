@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+	<title>Source of SD</title>
+	<nodes>
+		<node label="src">
+			<node label="Assets">
+				<node icon="imageIcon" label="BackGround.PNG" url="source/Assets/BackGround.PNG.html"/>
+				<node icon="imageIcon" label="Button.png" url="source/Assets/Button.png.html"/>
+				<node icon="imageIcon" label="ButtonHover.png" url="source/Assets/ButtonHover.png.html"/>
+				<node icon="imageIcon" label="ButtonPressed.png" url="source/Assets/ButtonPressed.png.html"/>
+				<node icon="imageIcon" label="Enemy.png" url="source/Assets/Enemy.png.html"/>
+				<node icon="imageIcon" label="Floor1.png" url="source/Assets/Floor1.png.html"/>
+				<node icon="imageIcon" label="Floor2.png" url="source/Assets/Floor2.png.html"/>
+				<node icon="imageIcon" label="Floor3.png" url="source/Assets/Floor3.png.html"/>
+				<node icon="imageIcon" label="Player.png" url="source/Assets/Player.png.html"/>
+			</node>
+			<node icon="packageIcon" label="MyClases" expanded="true">
+				<node icon="actionScriptIcon" label="Enemy.as" url="source/MyClases/Enemy.as.html"/>
+				<node icon="actionScriptIcon" label="InGame.as" url="source/MyClases/InGame.as.html"/>
+				<node icon="actionScriptIcon" label="Menu.as" url="source/MyClases/Menu.as.html"/>
+				<node icon="actionScriptIcon" label="Player.as" url="source/MyClases/Player.as.html"/>
+				<node icon="actionScriptIcon" label="SDButton.as" url="source/MyClases/SDButton.as.html"/>
+			</node>
+			<node icon="mxmlAppIcon" selected="true" label="SquareDeath.as" url="source/SquareDeath.as.html"/>
+		</node>
+	</nodes>
+	<zipfile label="Download source (ZIP, 304K)" url="SD.zip">
+	</zipfile>
+	<sdklink label="Download Flex SDK" url="http://www.adobe.com/go/flex451_sdk_download">
+	</sdklink>
+</index>

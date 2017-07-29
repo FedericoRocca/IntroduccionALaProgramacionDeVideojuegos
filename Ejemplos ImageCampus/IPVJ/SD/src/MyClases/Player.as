@@ -8,7 +8,7 @@ package MyClases
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	import flash.ui.Keyboard;
-
+	
 	public class Player extends Sprite
 	{		
 		
@@ -26,7 +26,6 @@ package MyClases
 		
 		public function Player()
 		{
-			
 			MyPlayer.scaleX = 0.16;
 			MyPlayer.scaleY = 0.16;
 			MyPlayer.x = -MyPlayer.width / 2;
@@ -119,6 +118,7 @@ package MyClases
 				//MyPlayer.rotation = 270;
 				//RotateAroundCenter(MyPlayer, 270);
 				this.rotation = 270;
+				
 				this.y -= Step;
 				MoveDown = false;
 			}
