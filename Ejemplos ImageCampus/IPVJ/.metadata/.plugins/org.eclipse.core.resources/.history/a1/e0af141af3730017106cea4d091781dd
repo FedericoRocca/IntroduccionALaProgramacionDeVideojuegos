@@ -15,7 +15,7 @@ package MyClases
 		[Embed(source="Assets/Player.png")]
 		private var APlayer:Class;
 		private var MyPlayer:Bitmap = new APlayer;
-		private var Step:uint = 3;
+		private var Step:uint = 2;
 		
 		// Movement flags
 		private var MoveUp:Boolean = false;

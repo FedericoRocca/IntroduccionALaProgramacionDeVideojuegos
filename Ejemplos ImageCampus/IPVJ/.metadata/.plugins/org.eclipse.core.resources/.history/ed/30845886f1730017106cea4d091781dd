@@ -15,7 +15,7 @@ package MyClases
 		[Embed(source="Assets/Player.png")]
 		private var APlayer:Class;
 		private var MyPlayer:Bitmap = new APlayer;
-		private var Step:uint = 3;
+		private var Step:uint = 2;
 		
 		// Movement flags
 		private var MoveUp:Boolean = false;
@@ -120,7 +120,6 @@ package MyClases
 				//RotateAroundCenter(MyPlayer, 270);
 				this.rotation = 270;
 				this.y -= Step;
-				MoveDown = false;
 			}
 			
 			if( MoveDown == true )
@@ -129,7 +128,6 @@ package MyClases
 				//RotateAroundCenter(MyPlayer, 90);
 				this.rotation = 90;
 				this.y += Step;
-				MoveUp = false;
 			}
 			
 			if( MoveRight == true )
@@ -138,7 +136,6 @@ package MyClases
 				//RotateAroundCenter(MyPlayer, 0);
 				this.rotation = 0;
 				this.x += Step;
-				MoveLeft = false;
 			}
 			
 			if( MoveLeft == true )
@@ -147,7 +144,6 @@ package MyClases
 				//RotateAroundCenter(MyPlayer, 180);
 				this.rotation = 180;
 				this.x -= Step;
-				MoveRight = false;
 			}
 			
 			//Rotaciones 45
@@ -156,32 +152,24 @@ package MyClases
 			{
 				//RotateAroundCenter(MyPlayer, 45 );
 				this.rotation = 45;
-				MoveUp = false;
-				MoveLeft = false;
 			}
 			
 			if( MoveDown == true && MoveLeft == true )
 			{
 				//RotateAroundCenter(MyPlayer, 135 );
 				this.rotation = 135;
-				MoveUp = false;
-				MoveRight = false;
 			}
 			
 			if( MoveLeft == true && MoveUp == true)
 			{
 				//RotateAroundCenter(MyPlayer, 225 );
 				this.rotation = 225;
-				MoveRight = false;
-				MoveDown = false;
 			}
 			
 			if( MoveUp == true && MoveRight == true)
 			{
 				//RotateAroundCenter(MyPlayer, 315 );
 				this.rotation = 315;
-				MoveDown = false;
-				MoveLeft = false;
 			}
 			
 		}

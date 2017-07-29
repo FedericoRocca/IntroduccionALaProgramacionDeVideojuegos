@@ -15,7 +15,7 @@ package MyClases
 		[Embed(source="Assets/Player.png")]
 		private var APlayer:Class;
 		private var MyPlayer:Bitmap = new APlayer;
-		private var Step:uint = 3;
+		private var Step:uint = 2;
 		
 		// Movement flags
 		private var MoveUp:Boolean = false;
@@ -156,32 +156,24 @@ package MyClases
 			{
 				//RotateAroundCenter(MyPlayer, 45 );
 				this.rotation = 45;
-				MoveUp = false;
-				MoveLeft = false;
 			}
 			
 			if( MoveDown == true && MoveLeft == true )
 			{
 				//RotateAroundCenter(MyPlayer, 135 );
 				this.rotation = 135;
-				MoveUp = false;
-				MoveRight = false;
 			}
 			
 			if( MoveLeft == true && MoveUp == true)
 			{
 				//RotateAroundCenter(MyPlayer, 225 );
 				this.rotation = 225;
-				MoveRight = false;
-				MoveDown = false;
 			}
 			
 			if( MoveUp == true && MoveRight == true)
 			{
 				//RotateAroundCenter(MyPlayer, 315 );
 				this.rotation = 315;
-				MoveDown = false;
-				MoveLeft = false;
 			}
 			
 		}

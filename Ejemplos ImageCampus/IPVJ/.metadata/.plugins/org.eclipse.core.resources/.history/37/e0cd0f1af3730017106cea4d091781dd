@@ -10,9 +10,9 @@ package MyClases
 		private var AEnemy:Class;
 		private var MyEnemy:Bitmap = new AEnemy;
 		
-		private var Step:uint = 2;
+		private var Step:uint = 30;
 		
-		private var Damage:int = 10;
+		private var Damage:int = 0;
 		
 		public function Enemy()
 		{

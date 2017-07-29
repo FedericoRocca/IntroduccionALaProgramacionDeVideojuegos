@@ -38,7 +38,7 @@ package MyClases
 			
 			
 			HPTextFormat.bold = true;
-			HPTextFormat.size = 15;
+			HPTextFormat.size = 18;
 			HPTextFormat.font = "Courier New" ;
 			HPTextFormat.color = 0x0000ff;
 			
@@ -156,9 +156,7 @@ package MyClases
 		{
 			Vidas.text = "Salud: " + MyPlayer.getHP();
 			Vidas.defaultTextFormat = HPTextFormat;
-			Vidas.x = 0;
-			Vidas.autoSize = TextFieldAutoSize.CENTER;
-			Vidas.y = 512 - Vidas.height;
+			Vidas.border = true;
 			addChild(Vidas);
 			for( var i:int = 0; i < MyEnemy.length; i++)
 			{
