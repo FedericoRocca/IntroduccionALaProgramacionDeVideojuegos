@@ -12,7 +12,7 @@ package MyClases
 		
 		private var Step:uint = 2;
 		
-		private var Damage:int = 1;
+		private var Damage:int = 10;
 		
 		public function Enemy()
 		{
@@ -92,29 +92,29 @@ package MyClases
 			var Rotation:int = GetOrientation(PosX, PosY);
 			switch(Rotation)
 			{
-				case 0:
-					MyEnemy.rotation = 315;
+				case 0;
+					this.rotation = 315;
 					break;
-				case 1:
-					MyEnemy.rotation = 0;
+				case 1;
+					this.rotation = 0;
 					break;
-				case 2:
-					MyEnemy.rotation = 45;
+				case 2;
+					this.rotation = 45;
 					break;
-				case 3:
-					MyEnemy.rotation = 90;
+				case 3;
+					this.rotation = 90;
 					break;
-				case 4:
-					MyEnemy.rotation = 135;
+				case 4;
+					this.rotation = 135;
 					break;
-				case 5:
-					MyEnemy.rotation = 180;
+				case 5;
+					this.rotation = 180;
 					break;
-				case 6:
-					MyEnemy.rotation = 225;
+				case 6;
+					this.rotation = 225;
 					break;
-				case 7:
-					MyEnemy.rotation = 270;
+				case 7;
+					this.rotation = 270;
 					break;
 				
 			}
